@@ -8,12 +8,11 @@ By analyzing user rating data, this system can generate personalized movie recom
 - [Data Visualization](#data-visualization)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Dataset Source](#dataset-source)
-- [How to Use](#how-to-use)
 
 ## Data Visualization
 
 ### Most Viewed Movies Visualization
-In this section, we visualize the most viewed movies.
+In this section, we visualize the most viewed movies.<br>
 By analyzing the viewing records in the dataset, we showcase user interest in different movies.
 
 ![Most Viewed Movies](Most_Viewed.png)
@@ -57,8 +56,3 @@ The datasets used in this project are sourced from Kaggle, containing movie info
 The dataset includes two files:
 - `movies.csv`: Contains movie information.
 - `ratings.csv`: Contains user rating information.
-
-## How to Use
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Edie-Z/MovieRecomSys_KNNB-SVD.git
