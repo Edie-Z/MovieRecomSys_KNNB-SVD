@@ -50,27 +50,26 @@ To handle memory errors encountered in the KNNB and SVD models, we implemented a
 While KNNB and SVD models required data sampling to avoid memory issues, leading to potential accuracy trade-offs, ALS resolves these limitations by processing the full dataset without sampling.<br>
 Reference: [Exploring Apache Spark for Movie Recommendation](https://www.kaggle.com/code/aminaromdhani/exploring-apache-spark-for-movie-recommendation)
 
-Below are the personalized movie recommendations for user ID 1, including predicted ratings:
-+-------+------+----------+<br>
-|movieId|userId|prediction|<br>
-+-------+------+----------+<br>
-|   5767|     1| 4.3712645|<br>
-|   4973|     1|  4.319105|<br>
-|   3949|     1| 4.0552855|<br>
-|   8014|     1|  4.048539|<br>
-|   5878|     1| 4.0041246|<br>
-|   7327|     1| 3.9328592|<br>
-|   6370|     1|  3.931709|<br>
-|   1175|     1| 3.9190965|<br>
-|   5147|     1|  3.894529|<br>
-|   5912|     1| 3.8761215|<br>
-|    307|     1| 3.8094332|<br>
-|   6539|     1| 3.4849713|<br>
-|   2632|     1|   3.41504|<br>
-|   2011|     1| 3.2456813|<br>
-|   8729|     1|  3.028108|<br>
-|   2012|     1| 2.9614003|<br>
-+-------+------+----------+<br>
+Below are the personalized movie recommendations for user ID 1, including predicted ratings:<br>
+| MovieID | UserID | Prediction |
+|---------|--------|------------|
+| 5767    | 1      | 4.3713     |
+| 4973    | 1      | 4.3191     |
+| 3949    | 1      | 4.0553     |
+| 8014    | 1      | 4.0485     |
+| 5878    | 1      | 4.0041     |
+| 7327    | 1      | 3.9329     |
+| 6370    | 1      | 3.9317     |
+| 1175    | 1      | 3.9191     |
+| 5147    | 1      | 3.8945     |
+| 5912    | 1      | 3.8761     |
+| 307     | 1      | 3.8094     |
+| 6539    | 1      | 3.4850     |
+| 2632    | 1      | 3.4150     |
+| 2011    | 1      | 3.2457     |
+| 8729    | 1      | 3.0281     |
+| 2012    | 1      | 2.9614     |
+
 
 ### Evaluation Metrics
 We evaluate the models using the following metrics:
