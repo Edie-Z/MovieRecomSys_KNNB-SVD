@@ -1,8 +1,9 @@
 # MovieRecomSys_KNNB&SVD&ALS
 
 ## Project Overview
-This project is a movie recommendation system that utilizes KNNB (K-Nearest Neighbors-Based), SVD (Singular Value Decomposition), and ALS (Alternating Least Squares) algorithms.
-By analyzing user rating data, the system generates personalized movie recommendations and addresses scalability issues in large datasets.
+This project is a movie recommendation system that utilizes KNNB (K-Nearest Neighbors-Based), SVD (Singular Value Decomposition),<br>
+and ALS (Alternating Least Squares) algorithms. By analyzing user rating data, the system generates personalized movie recommendations<br>
+and addresses scalability issues in large datasets.
 
 ## Table of Contents
 - [Data Visualization](#data-visualization)
