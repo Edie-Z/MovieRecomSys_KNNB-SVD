@@ -1,8 +1,8 @@
-# MovieRecomSys_KNNB&SVD
+# MovieRecomSys_KNNB&SVD&ALS
 
 ## Project Overview
-This project is a movie recommendation system that utilizes KNNB (K-Nearest Neighbors-Based) and SVD (Singular Value Decomposition) algorithms.
-By analyzing user rating data, this system can generate personalized movie recommendations.
+This project is a movie recommendation system that utilizes KNNB (K-Nearest Neighbors-Based), SVD (Singular Value Decomposition), and ALS (Alternating Least Squares) algorithms.<br>
+By analyzing user rating data, the system generates personalized movie recommendations and addresses scalability issues in large datasets.
 
 ## Table of Contents
 - [Data Visualization](#data-visualization)
@@ -19,7 +19,11 @@ By analyzing the viewing records in the dataset, we showcase user interest in di
 ### Visualize the Distribution of Average Ratings per User
 This visualization displays the distribution of average ratings per user, helping to understand user rating habits and preferences.
 
-![Average Ratings Distribution](Distribution.png)  <!-- Replace with the actual path to your visualization image -->
+![Average Ratings Distribution](Distribution.png)  
+### Top 10 Movies with the Highest Average Ratings
+This visualization highlights the top 10 movies with the highest average ratings across all users, showcasing popular high-quality movies within the dataset.
+
+![Top Rated Movies](Ratings.png)  
 
 ## Model Training and Evaluation
 
@@ -40,14 +44,44 @@ We use the KNNB algorithm to generate recommendations for a specific user. Here 
 ### SVD
 The SVD algorithm is employed to enhance the accuracy and personalization of the recommendations.
 
+### ALS - Addressing Scalability Issues
+To handle memory errors encountered in the KNNB and SVD models, we implemented an Apache Spark ALS (Alternating Least Squares) model, which is optimized for distributed data processing and can handle larger datasets.<br>
+While KNNB and SVD models required data sampling to avoid memory issues, leading to potential accuracy trade-offs, ALS resolves these limitations by processing the full dataset without sampling.<br>
+Reference: [Exploring Apache Spark for Movie Recommendation](https://www.kaggle.com/code/aminaromdhani/exploring-apache-spark-for-movie-recommendation)
+
+Below are the personalized movie recommendations for user ID 1, including predicted ratings:
++-------+------+----------+
+|movieId|userId|prediction|
++-------+------+----------+
+|   5767|     1| 4.3712645|
+|   4973|     1|  4.319105|
+|   3949|     1| 4.0552855|
+|   8014|     1|  4.048539|
+|   5878|     1| 4.0041246|
+|   7327|     1| 3.9328592|
+|   6370|     1|  3.931709|
+|   1175|     1| 3.9190965|
+|   5147|     1|  3.894529|
+|   5912|     1| 3.8761215|
+|    307|     1| 3.8094332|
+|   6539|     1| 3.4849713|
+|   2632|     1|   3.41504|
+|   2011|     1| 3.2456813|
+|   8729|     1|  3.028108|
+|   2012|     1| 2.9614003|
++-------+------+----------+
+
 ### Evaluation Metrics
 We evaluate the models using the following metrics:
 - RMSE (Root Mean Square Error)
 - MAE (Mean Absolute Error)
 
-The visualization of the evaluation results is as follows:
+The ALS model was evaluated with the following results:<br>
+Root Mean Squared Error (RMSE): 0.8209
 
-![Model Evaluation](RMSE.png)  <!-- Replace with the actual path to your evaluation image -->
+The visualization of the evaluation results of KNNB and SVD is as follows:
+
+![Model Evaluation](RMSE.png) 
 
 ## Dataset Source
 The datasets used in this project are sourced from Kaggle, containing movie information and user ratings. You can download the datasets from the following link:
