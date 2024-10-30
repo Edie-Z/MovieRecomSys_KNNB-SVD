@@ -1,7 +1,7 @@
 # MovieRecomSys_KNNB&SVD&ALS
 
 ## Project Overview
-This project is a movie recommendation system that utilizes KNNB (K-Nearest Neighbors-Based), SVD (Singular Value Decomposition), and ALS (Alternating Least Squares) algorithms.<br>
+This project is a movie recommendation system that utilizes KNNB (K-Nearest Neighbors-Based), SVD (Singular Value Decomposition), and ALS (Alternating Least Squares) algorithms.
 By analyzing user rating data, the system generates personalized movie recommendations and addresses scalability issues in large datasets.
 
 ## Table of Contents
@@ -23,7 +23,7 @@ This visualization displays the distribution of average ratings per user, helpin
 ### Top 10 Movies with the Highest Average Ratings
 This visualization highlights the top 10 movies with the highest average ratings across all users, showcasing popular high-quality movies within the dataset.
 
-![Top Rated Movies](Ratings.png)  
+![Top Rated Movies](Average_Ratings.png)  
 
 ## Model Training and Evaluation
 
@@ -50,26 +50,26 @@ While KNNB and SVD models required data sampling to avoid memory issues, leading
 Reference: [Exploring Apache Spark for Movie Recommendation](https://www.kaggle.com/code/aminaromdhani/exploring-apache-spark-for-movie-recommendation)
 
 Below are the personalized movie recommendations for user ID 1, including predicted ratings:
-+-------+------+----------+
-|movieId|userId|prediction|
-+-------+------+----------+
-|   5767|     1| 4.3712645|
-|   4973|     1|  4.319105|
-|   3949|     1| 4.0552855|
-|   8014|     1|  4.048539|
-|   5878|     1| 4.0041246|
-|   7327|     1| 3.9328592|
-|   6370|     1|  3.931709|
-|   1175|     1| 3.9190965|
-|   5147|     1|  3.894529|
-|   5912|     1| 3.8761215|
-|    307|     1| 3.8094332|
-|   6539|     1| 3.4849713|
-|   2632|     1|   3.41504|
-|   2011|     1| 3.2456813|
-|   8729|     1|  3.028108|
-|   2012|     1| 2.9614003|
-+-------+------+----------+
++-------+------+----------+<br>
+|movieId|userId|prediction|<br>
++-------+------+----------+<br>
+|   5767|     1| 4.3712645|<br>
+|   4973|     1|  4.319105|<br>
+|   3949|     1| 4.0552855|<br>
+|   8014|     1|  4.048539|<br>
+|   5878|     1| 4.0041246|<br>
+|   7327|     1| 3.9328592|<br>
+|   6370|     1|  3.931709|<br>
+|   1175|     1| 3.9190965|<br>
+|   5147|     1|  3.894529|<br>
+|   5912|     1| 3.8761215|<br>
+|    307|     1| 3.8094332|<br>
+|   6539|     1| 3.4849713|<br>
+|   2632|     1|   3.41504|<br>
+|   2011|     1| 3.2456813|<br>
+|   8729|     1|  3.028108|<br>
+|   2012|     1| 2.9614003|<br>
++-------+------+----------+<br>
 
 ### Evaluation Metrics
 We evaluate the models using the following metrics:
