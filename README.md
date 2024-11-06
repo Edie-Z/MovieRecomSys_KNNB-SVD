@@ -1,9 +1,7 @@
 # MovieRecomSys_KNNB&SVD&ALS
 
 ## Project Overview
-This project is a movie recommendation system that utilizes KNNB (K-Nearest Neighbors-Based), SVD (Singular Value Decomposition),<br>
-and ALS (Alternating Least Squares) algorithms. By analyzing user rating data, the system generates personalized movie recommendations<br>
-and addresses scalability issues in large datasets.
+This project is a movie recommendation system that utilizes KNNB (K-Nearest Neighbors-Based), SVD (Singular Value Decomposition), and ALS (Alternating Least Squares) algorithms. By analyzing user rating data, the system generates personalized movie recommendations and addresses scalability issues in large datasets.
 
 ## Table of Contents
 - [Data Visualization](#data-visualization)
@@ -13,8 +11,7 @@ and addresses scalability issues in large datasets.
 ## Data Visualization
 
 ### Most Viewed Movies Visualization
-In this section, we visualize the most viewed movies.<br>
-By analyzing the viewing records in the dataset, we showcase user interest in different movies.
+By analyzing the viewing records in the dataset and visualizing the most viewed movies, we showcase user interest in different movies.
 
 ![Most Viewed Movies](Most_Viewed.png)
 ### Visualize the Distribution of Average Ratings per User
@@ -84,7 +81,8 @@ The visualization of the evaluation results of KNNB and SVD is as follows:
 ![Model Evaluation](RMSE.png) 
 
 ## Dataset Source
-The datasets used in this project are sourced from Kaggle, containing movie information and user ratings. You can download the datasets from the following link:
+The datasets used in this project are sourced from Kaggle, containing movie information and user ratings.  
+You can download the datasets from the following link:
 - [Movie Recommendation System Dataset](https://www.kaggle.com/datasets/parasharmanas/movie-recommendation-system/data)
 
 The dataset includes two files:
